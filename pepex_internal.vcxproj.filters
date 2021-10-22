@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\cheat_func">
+      <UniqueIdentifier>{29000da3-bdb8-4b11-a0d0-49d535e62b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk">
+      <UniqueIdentifier>{3cdadc8b-ed00-4a52-8fa2-7468b1a29572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\cheat_base">
+      <UniqueIdentifier>{cef21cb6-8bb5-4721-9372-2b8413fde2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\gui">
+      <UniqueIdentifier>{ae8195c3-2361-43f6-8477-e455098fe0f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CheatSDK\Funcs\AimBot.h" />
+    <ClInclude Include="CheatSDK\Funcs\BulletPrediction.h" />
+    <ClInclude Include="CheatSDK\Hooks\GameMovement.h" />
+    <ClInclude Include="GameSDK\GameSDK.h" />
+    <ClInclude Include="GameSDK\NetvarMgr.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatSDK\CheatSDK.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatSDK\Utils\Utils.h">
+      <Filter>Исходные файлы\cheat_base</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatSDK\Utils\Math.h">
+      <Filter>Исходные файлы\cheat_base</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatSDK\Hooks\DirectX.h">
+      <Filter>Исходные файлы\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatSDK\GuiRender\Gui.h">
+      <Filter>Исходные файлы\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatSDK\GuiRender\D3D_Experimental\RenderData.h" />
+    <ClInclude Include="CheatSDK\GuiRender\D3D_Experimental\D3D_Render.h" />
+    <ClInclude Include="CheatSDK\Utils\VMP_SDK\VMProtectSDK.h" />
+    <ClInclude Include="CheatSDK\Utils\EncStr.h">
+      <Filter>Исходные файлы\cheat_base</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="CheatSDK\Hooks\ClientMode.h">
+      <Filter>Исходные файлы\sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DLLMain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="CheatSDK\Utils\VMP_SDK\VMProtectSDK64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="CheatSDK\Utils\SpoofCall.asm">
+      <Filter>Исходные файлы</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
